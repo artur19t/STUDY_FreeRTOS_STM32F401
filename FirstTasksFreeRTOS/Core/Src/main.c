@@ -42,6 +42,10 @@
 
 /* Private variables ---------------------------------------------------------*/
 osThreadId defaultTaskHandle;
+osThreadId myTask02Handle;
+osThreadId myTask03Handle;
+osThreadId myTask04Handle;
+osThreadId myTask01Handle;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -49,9 +53,12 @@ osThreadId defaultTaskHandle;
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 void StartDefaultTask(void const * argument);
+void StartTask02(void const * argument);
+void StartTask03(void const * argument);
+void StartTask04(void const * argument);
+void StartTask01(void const * argument);
 
 /* USER CODE BEGIN PFP */
-
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -97,7 +104,7 @@ int main(void)
 
   /* Initialize all configured peripherals */
   /* USER CODE BEGIN 2 */
-
+	GPIO_Init();
   /* USER CODE END 2 */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -120,6 +127,22 @@ int main(void)
   /* definition and creation of defaultTask */
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 128);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+
+  /* definition and creation of myTask02 */
+  osThreadDef(myTask02, StartTask02, osPriorityIdle, 0, 128);
+  myTask02Handle = osThreadCreate(osThread(myTask02), NULL);
+
+  /* definition and creation of myTask03 */
+  osThreadDef(myTask03, StartTask03, osPriorityIdle, 0, 128);
+  myTask03Handle = osThreadCreate(osThread(myTask03), NULL);
+
+  /* definition and creation of myTask04 */
+  osThreadDef(myTask04, StartTask04, osPriorityIdle, 0, 128);
+  myTask04Handle = osThreadCreate(osThread(myTask04), NULL);
+
+  /* definition and creation of myTask01 */
+  osThreadDef(myTask01, StartTask01, osPriorityIdle, 0, 128);
+  myTask01Handle = osThreadCreate(osThread(myTask01), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -188,6 +211,50 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
+void TaskSwitchedIn(int tag)
+{
+	switch (tag)
+	{
+		case 1:
+			LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_0);
+			break;
+		case 2:
+			LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_1);
+			break;
+		case 3:
+			LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_2);
+			break;
+		case 4:
+			LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_3);
+			break;
+	}
+}
+
+void TaskSwitchedOut(int tag)
+{
+	switch (tag)
+	{
+		case 1:
+			LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_0);
+			break;
+		case 2:
+			LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_1);
+			break;
+		case 3:
+			LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_2);
+			break;
+		case 4:
+			LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_3);
+			break;
+	}
+}
+
+void vApplicationIdleHook(void)
+{
+	LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_4);
+	__NOP();
+	LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_4);
+}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -200,12 +267,89 @@ void SystemClock_Config(void)
 void StartDefaultTask(void const * argument)
 {
   /* USER CODE BEGIN 5 */
+	
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
   }
   /* USER CODE END 5 */
+}
+
+/* USER CODE BEGIN Header_StartTask02 */
+/**
+* @brief Function implementing the myTask02 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTask02 */
+void StartTask02(void const * argument)
+{
+  /* USER CODE BEGIN StartTask02 */
+	vTaskSetApplicationTaskTag(NULL,(void*)2);
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartTask02 */
+}
+
+/* USER CODE BEGIN Header_StartTask03 */
+/**
+* @brief Function implementing the myTask03 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTask03 */
+void StartTask03(void const * argument)
+{
+  /* USER CODE BEGIN StartTask03 */
+	vTaskSetApplicationTaskTag(NULL,(void*)3);
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartTask03 */
+}
+
+/* USER CODE BEGIN Header_StartTask04 */
+/**
+* @brief Function implementing the myTask04 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTask04 */
+void StartTask04(void const * argument)
+{
+  /* USER CODE BEGIN StartTask04 */
+	vTaskSetApplicationTaskTag(NULL,(void*)4);
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartTask04 */
+}
+
+/* USER CODE BEGIN Header_StartTask01 */
+/**
+* @brief Function implementing the myTask01 thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTask01 */
+void StartTask01(void const * argument)
+{
+  /* USER CODE BEGIN StartTask01 */
+	vTaskSetApplicationTaskTag(NULL,(void*)1);
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartTask01 */
 }
 
 /**

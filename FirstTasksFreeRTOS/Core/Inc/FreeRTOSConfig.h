@@ -70,6 +70,7 @@
 #define configUSE_16_BIT_TICKS                   0
 #define configUSE_MUTEXES                        1
 #define configQUEUE_REGISTRY_SIZE                8
+#define configUSE_APPLICATION_TASK_TAG           1
 #define configUSE_PORT_OPTIMISED_TASK_SELECTION  1
 /* USER CODE BEGIN MESSAGE_BUFFER_LENGTH_TYPE */
 /* Defaults to size_t for backward compatibility, but can be changed
@@ -135,6 +136,10 @@ standard names. */
 
 /* USER CODE BEGIN Defines */
 /* Section where parameter definitions can be added (for instance, to override default ones in FreeRTOS.h) */
+#include "main.h"
+
+#define traceTASK_SWITCHED_IN() TaskSwitchedIn((int)pxCurrentTCB->pxTaskTag);
+#define traceTASK_SWITCHED_OUT() TaskSwitchedOut((int)pxCurrentTCB->pxTaskTag);
 /* USER CODE END Defines */
 
 #endif /* FREERTOS_CONFIG_H */

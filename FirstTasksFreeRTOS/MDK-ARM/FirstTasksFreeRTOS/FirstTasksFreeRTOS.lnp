@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"firsttasksfreertos\startup_stm32f401xc.o"
+"firsttasksfreertos\main.o"
+"firsttasksfreertos\freertos.o"
+"firsttasksfreertos\stm32f4xx_it.o"
+"firsttasksfreertos\stm32f4xx_ll_rcc.o"
+"firsttasksfreertos\stm32f4xx_ll_utils.o"
+"firsttasksfreertos\stm32f4xx_ll_exti.o"
+"firsttasksfreertos\stm32f4xx_ll_gpio.o"
+"firsttasksfreertos\system_stm32f4xx.o"
+"firsttasksfreertos\croutine.o"
+"firsttasksfreertos\event_groups.o"
+"firsttasksfreertos\list.o"
+"firsttasksfreertos\queue.o"
+"firsttasksfreertos\stream_buffer.o"
+"firsttasksfreertos\tasks.o"
+"firsttasksfreertos\timers.o"
+"firsttasksfreertos\cmsis_os.o"
+"firsttasksfreertos\heap_4.o"
+"firsttasksfreertos\port.o"
+"firsttasksfreertos\hw_init.o"
+"firsttasksfreertos\rtos_tasks_init.o"
+--strict --scatter "FirstTasksFreeRTOS\FirstTasksFreeRTOS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "FirstTasksFreeRTOS.map" -o FirstTasksFreeRTOS\FirstTasksFreeRTOS.axf
