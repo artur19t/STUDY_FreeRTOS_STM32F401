@@ -290,7 +290,11 @@ void StartTask02(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+		for (uint32_t i = 0; i < 1000; i++)
+		{
+			__NOP();
+		}
+    osDelay(2);
   }
   /* USER CODE END StartTask02 */
 }
@@ -309,6 +313,10 @@ void StartTask03(void const * argument)
   /* Infinite loop */
   for(;;)
   {
+		for (uint32_t i = 0; i < 1000; i++)
+		{
+			__NOP();
+		}
     osDelay(1);
   }
   /* USER CODE END StartTask03 */
@@ -328,6 +336,10 @@ void StartTask04(void const * argument)
   /* Infinite loop */
   for(;;)
   {
+		for (uint32_t i = 0; i < 1000; i++)
+		{
+			__NOP();
+		}
     osDelay(1);
   }
   /* USER CODE END StartTask04 */
@@ -347,6 +359,10 @@ void StartTask01(void const * argument)
   /* Infinite loop */
   for(;;)
   {
+		for (uint32_t i = 0; i < 1000; i++)
+		{
+			__NOP();
+		}
     osDelay(1);
   }
   /* USER CODE END StartTask01 */
