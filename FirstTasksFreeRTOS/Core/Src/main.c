@@ -290,7 +290,7 @@ void StartTask02(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		for (uint32_t i = 0; i < 1000; i++)
+		for (uint32_t i = 0; i < 400; i++)
 		{
 			__NOP();
 		}
@@ -310,6 +310,8 @@ void StartTask03(void const * argument)
 {
   /* USER CODE BEGIN StartTask03 */
 	vTaskSetApplicationTaskTag(NULL,(void*)3);
+	TickType_t xLastWakeTime;
+	const TickType_t xDelay3ms = pdMS_TO_TICKS(3);
   /* Infinite loop */
   for(;;)
   {
@@ -317,7 +319,7 @@ void StartTask03(void const * argument)
 		{
 			__NOP();
 		}
-    osDelay(1);
+    vTaskDelayUntil(&xLastWakeTime, xDelay3ms);
   }
   /* USER CODE END StartTask03 */
 }
