@@ -1688,13 +1688,13 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       142          0          0          0          0      23471   cmsis_os.o
-         0          0          0          0          0      17104   event_groups.o
+       142          0          0          0          0      23443   cmsis_os.o
+         0          0          0          0          0      17076   event_groups.o
         24         10          0          0        600       5548   freertos.o
        724         74          0         32      15360       7851   heap_4.o
         72          8          0          0          0       4664   hw_init.o
        148          0          0          0          0       3918   list.o
-      1102         90        208         20          0     442056   main.o
+      1102         90        208         20          0     442028   main.o
        934         76          0         12          0      11860   port.o
         64         26        404          0       1536        900   startup_stm32f401xc.o
         38          0          0          0          0       3687   stm32f4xx_it.o
@@ -1705,7 +1705,7 @@ Image component sizes
       2472        296          0         60        240      24301   tasks.o
 
     ----------------------------------------------------------------------
-      6102        592        644        128      17736     557591   Object Totals
+      6102        592        644        128      17736     557507   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         10          0          0          0          0          0   (incl. Padding)
 
@@ -1758,8 +1758,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      6572        608        644        128      17832     551891   Grand Totals
-      6572        608        644        128      17832     551891   ELF Image Totals
+      6572        608        644        128      17832     551807   Grand Totals
+      6572        608        644        128      17832     551807   ELF Image Totals
       6572        608        644        128          0          0   ROM Totals
 
 ==============================================================================
