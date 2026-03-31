@@ -129,19 +129,19 @@ int main(void)
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
 
   /* definition and creation of myTask02 */
-  osThreadDef(myTask02, StartTask02, osPriorityIdle, 0, 128);
+  osThreadDef(myTask02, StartTask02, osPriorityNormal, 0, 128);
   myTask02Handle = osThreadCreate(osThread(myTask02), NULL);
 
   /* definition and creation of myTask03 */
-  osThreadDef(myTask03, StartTask03, osPriorityIdle, 0, 128);
+  osThreadDef(myTask03, StartTask03, osPriorityNormal, 0, 128);
   myTask03Handle = osThreadCreate(osThread(myTask03), NULL);
 
   /* definition and creation of myTask04 */
-  osThreadDef(myTask04, StartTask04, osPriorityIdle, 0, 128);
+  osThreadDef(myTask04, StartTask04, osPriorityNormal, 0, 128);
   myTask04Handle = osThreadCreate(osThread(myTask04), NULL);
 
   /* definition and creation of myTask01 */
-  osThreadDef(myTask01, StartTask01, osPriorityIdle, 0, 128);
+  osThreadDef(myTask01, StartTask01, osPriorityNormal, 0, 128);
   myTask01Handle = osThreadCreate(osThread(myTask01), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -313,7 +313,7 @@ void StartTask03(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		for (uint32_t i = 0; i < 1000; i++)
+		for (uint32_t i = 0; i < 8000; i++)
 		{
 			__NOP();
 		}
@@ -336,7 +336,7 @@ void StartTask04(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		for (uint32_t i = 0; i < 1000; i++)
+		for (uint32_t i = 0; i < 8000; i++)
 		{
 			__NOP();
 		}
@@ -359,7 +359,7 @@ void StartTask01(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		for (uint32_t i = 0; i < 1000; i++)
+		for (uint32_t i = 0; i < 12000; i++)
 		{
 			__NOP();
 		}
