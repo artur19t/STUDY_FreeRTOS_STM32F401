@@ -133,7 +133,7 @@ int main(void)
   myTask02Handle = osThreadCreate(osThread(myTask02), NULL);
 
   /* definition and creation of myTask03 */
-  osThreadDef(myTask03, StartTask03, osPriorityNormal, 0, 128);
+  osThreadDef(myTask03, StartTask03, osPriorityAboveNormal, 0, 128);
   myTask03Handle = osThreadCreate(osThread(myTask03), NULL);
 
   /* definition and creation of myTask04 */
@@ -313,7 +313,7 @@ void StartTask03(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		for (uint32_t i = 0; i < 8000; i++)
+		for (uint32_t i = 0; i < 6000; i++)
 		{
 			__NOP();
 		}
