@@ -346,10 +346,7 @@ void StartTask04(void const * argument)
   for(;;)
   {
 		xQueueReceive(myQueue01Handle,&Receive,portMAX_DELAY);
-    for(size_t i = 0; i < 1000; i++)
-		{
-			__NOP();
-		}
+		osDelay(1);
   }
   /* USER CODE END StartTask04 */
 }

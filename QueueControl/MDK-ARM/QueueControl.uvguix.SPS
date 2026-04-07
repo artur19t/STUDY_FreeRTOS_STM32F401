@@ -93,8 +93,8 @@
       <flags>2</flags>
       <showCmd>3</showCmd>
       <MinPosition>
-        <xPos>-1</xPos>
-        <yPos>-1</yPos>
+        <xPos>-32000</xPos>
+        <yPos>-32000</yPos>
       </MinPosition>
       <MaxPosition>
         <xPos>-1</xPos>
@@ -1866,8 +1866,8 @@
       <Doc>
         <Name>../Core/Src/main.c</Name>
         <ColumnNumber>15</ColumnNumber>
-        <TopLine>279</TopLine>
-        <CurrentLine>289</CurrentLine>
+        <TopLine>315</TopLine>
+        <CurrentLine>349</CurrentLine>
         <Folding>1</Folding>
         <ContractedFolders></ContractedFolders>
         <PaneID>0</PaneID>
