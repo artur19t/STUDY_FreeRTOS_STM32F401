@@ -1,0 +1,10 @@
+queuecontrol\system_stm32f4xx.o: ../Core/Src/system_stm32f4xx.c
+queuecontrol\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+queuecontrol\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h
+queuecontrol\system_stm32f4xx.o: ../Drivers/CMSIS/Include/core_cm4.h
+queuecontrol\system_stm32f4xx.o: C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+queuecontrol\system_stm32f4xx.o: ../Drivers/CMSIS/Include/cmsis_version.h
+queuecontrol\system_stm32f4xx.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+queuecontrol\system_stm32f4xx.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+queuecontrol\system_stm32f4xx.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+queuecontrol\system_stm32f4xx.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h

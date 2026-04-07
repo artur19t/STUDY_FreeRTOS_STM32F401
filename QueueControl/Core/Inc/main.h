@@ -44,6 +44,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "hw_init.h"
 
 /* USER CODE END Includes */
 
@@ -66,6 +67,8 @@ extern "C" {
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
+void TaskSwitchedIn(int tag);
+void TaskSwitchedOut(int tag);
 
 /* USER CODE END EFP */
 

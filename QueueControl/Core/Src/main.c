@@ -206,7 +206,50 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+void TaskSwitchedIn(int tag)
+{
+	switch (tag)
+	{
+		case 1:
+			LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_0);
+			break;
+		case 2:
+			LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_1);
+			break;
+		case 3:
+			LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_2);
+			break;
+		case 4:
+			LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_3);
+			break;
+	}
+}
 
+void TaskSwitchedOut(int tag)
+{
+	switch (tag)
+	{
+		case 1:
+			LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_0);
+			break;
+		case 2:
+			LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_1);
+			break;
+		case 3:
+			LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_2);
+			break;
+		case 4:
+			LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_3);
+			break;
+	}
+}
+
+void vApplicationIdleHook(void)
+{
+	LL_GPIO_SetOutputPin(GPIOA, LL_GPIO_PIN_4);
+	__NOP();
+	LL_GPIO_ResetOutputPin(GPIOA, LL_GPIO_PIN_4);
+}
 /* USER CODE END 4 */
 
 /* USER CODE BEGIN Header_StartDefaultTask */
@@ -237,10 +280,11 @@ void StartDefaultTask(void const * argument)
 void StartTask01(void const * argument)
 {
   /* USER CODE BEGIN StartTask01 */
+	vTaskSetApplicationTaskTag(NULL,(void*)1);
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    __NOP();
   }
   /* USER CODE END StartTask01 */
 }
@@ -255,10 +299,11 @@ void StartTask01(void const * argument)
 void StartTask02(void const * argument)
 {
   /* USER CODE BEGIN StartTask02 */
+	vTaskSetApplicationTaskTag(NULL,(void*)2);
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    __NOP();
   }
   /* USER CODE END StartTask02 */
 }
@@ -273,12 +318,15 @@ void StartTask02(void const * argument)
 void StartTask03(void const * argument)
 {
   /* USER CODE BEGIN StartTask03 */
+	vTaskSetApplicationTaskTag(NULL,(void*)3);
+	uint32_t Item = 10;
   /* Infinite loop */
   for(;;)
   {
+		xQueueSend(myQueue01Handle, &Item, 10);
     osDelay(1);
   }
-  /* USER CODE END StartTask03 */
+  /* USER CODE END StartTask03 */ 
 }
 
 /* USER CODE BEGIN Header_StartTask04 */
@@ -291,10 +339,16 @@ void StartTask03(void const * argument)
 void StartTask04(void const * argument)
 {
   /* USER CODE BEGIN StartTask04 */
+	vTaskSetApplicationTaskTag(NULL,(void*)4);
+	uint32_t Receive;
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+		xQueueReceive(myQueue01Handle,&Receive,portMAX_DELAY);
+    for(size_t i = 0; i < 1000; i++)
+		{
+			__NOP();
+		}
   }
   /* USER CODE END StartTask04 */
 }

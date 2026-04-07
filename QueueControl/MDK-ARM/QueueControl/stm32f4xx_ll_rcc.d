@@ -1,0 +1,11 @@
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/CMSIS/Include/core_cm4.h
+queuecontrol\stm32f4xx_ll_rcc.o: C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/CMSIS/Include/cmsis_version.h
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+queuecontrol\stm32f4xx_ll_rcc.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h

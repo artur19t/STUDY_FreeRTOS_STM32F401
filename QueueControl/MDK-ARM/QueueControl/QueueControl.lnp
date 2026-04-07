@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp.sp
+"queuecontrol\startup_stm32f401xc.o"
+"queuecontrol\main.o"
+"queuecontrol\freertos.o"
+"queuecontrol\stm32f4xx_it.o"
+"queuecontrol\stm32f4xx_ll_rcc.o"
+"queuecontrol\stm32f4xx_ll_utils.o"
+"queuecontrol\stm32f4xx_ll_exti.o"
+"queuecontrol\stm32f4xx_ll_gpio.o"
+"queuecontrol\system_stm32f4xx.o"
+"queuecontrol\croutine.o"
+"queuecontrol\event_groups.o"
+"queuecontrol\list.o"
+"queuecontrol\queue.o"
+"queuecontrol\stream_buffer.o"
+"queuecontrol\tasks.o"
+"queuecontrol\timers.o"
+"queuecontrol\cmsis_os.o"
+"queuecontrol\heap_4.o"
+"queuecontrol\port.o"
+"queuecontrol\hw_init.o"
+--strict --scatter "QueueControl\QueueControl.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "QueueControl.map" -o QueueControl\QueueControl.axf

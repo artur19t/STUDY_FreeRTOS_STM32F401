@@ -1,0 +1,515 @@
+Dependencies for Project 'QueueControl', Target 'QueueControl': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (startup_stm32f401xc.s)(0x69D4AD5C)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include--pd "__UVISION_VERSION SETA 543" --pd "STM32F401xC SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f401xc.lst --xref -o queuecontrol\startup_stm32f401xc.o --depend queuecontrol\startup_stm32f401xc.d)
+F (../Core/Src/main.c)(0x69D4B054)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\main.o --omf_browse queuecontrol\main.crf --depend queuecontrol\main.d)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x69C5366B)
+F (../Core/Src/freertos.c)(0x69D3B045)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\freertos.o --omf_browse queuecontrol\freertos.crf --depend queuecontrol\freertos.d)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+F (../Core/Src/stm32f4xx_it.c)(0x69D3B045)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\stm32f4xx_it.o --omf_browse queuecontrol\stm32f4xx_it.crf --depend queuecontrol\stm32f4xx_it.d)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Core/Inc/stm32f4xx_it.h)(0x69D3B045)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_rcc.c)(0x69C536D1)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\stm32f4xx_ll_rcc.o --omf_browse queuecontrol\stm32f4xx_ll_rcc.crf --depend queuecontrol\stm32f4xx_ll_rcc.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_utils.c)(0x69C536D1)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\stm32f4xx_ll_utils.o --omf_browse queuecontrol\stm32f4xx_ll_utils.crf --depend queuecontrol\stm32f4xx_ll_utils.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_exti.c)(0x69C536D1)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\stm32f4xx_ll_exti.o --omf_browse queuecontrol\stm32f4xx_ll_exti.crf --depend queuecontrol\stm32f4xx_ll_exti.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_gpio.c)(0x69C536D1)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\stm32f4xx_ll_gpio.o --omf_browse queuecontrol\stm32f4xx_ll_gpio.crf --depend queuecontrol\stm32f4xx_ll_gpio.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+F (../Core/Src/system_stm32f4xx.c)(0x69C536D2)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\system_stm32f4xx.o --omf_browse queuecontrol\system_stm32f4xx.crf --depend queuecontrol\system_stm32f4xx.d)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+F (../Middlewares/Third_Party/FreeRTOS/Source/croutine.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\croutine.o --omf_browse queuecontrol\croutine.crf --depend queuecontrol\croutine.d)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/croutine.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/event_groups.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\event_groups.o --omf_browse queuecontrol\event_groups.crf --depend queuecontrol\event_groups.d)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x69C539DB)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/list.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\list.o --omf_browse queuecontrol\list.crf --depend queuecontrol\list.d)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x69C539DB)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/queue.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\queue.o --omf_browse queuecontrol\queue.crf --depend queuecontrol\queue.d)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x69C539DB)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\string.h)(0x69C539DB)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\stream_buffer.o --omf_browse queuecontrol\stream_buffer.crf --depend queuecontrol\stream_buffer.d)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\string.h)(0x69C539DB)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/stream_buffer.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/tasks.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\tasks.o --omf_browse queuecontrol\tasks.crf --depend queuecontrol\tasks.d)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x69C539DB)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\string.h)(0x69C539DB)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/stack_macros.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/timers.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\timers.o --omf_browse queuecontrol\timers.crf --depend queuecontrol\timers.d)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x69C539DB)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\cmsis_os.o --omf_browse queuecontrol\cmsis_os.crf --depend queuecontrol\cmsis_os.d)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\string.h)(0x69C539DB)
+I (../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/timers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/queue.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\heap_4.o --omf_browse queuecontrol\heap_4.crf --depend queuecontrol\heap_4.d)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x69C539DB)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+F (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c)(0x69C5366B)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\port.o --omf_browse queuecontrol\port.crf --depend queuecontrol\port.d)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h)(0x69C5366B)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stddef.h)(0x69C539DA)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Core/Inc/FreeRTOSConfig.h)(0x69D4AD59)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/projdefs.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/portable.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/deprecated_definitions.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/portmacro.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/mpu_wrappers.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/task.h)(0x69C5366B)
+I (../Middlewares/Third_Party/FreeRTOS/Source/include/list.h)(0x69C5366B)
+F (..\User\Src\hw_init.c)(0x69D4AB93)(--c99 -c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../User/Src -I ../User/Inc-I.\RTE\_QueueControl-IC:\Users\SPS\AppData\Local\Arm\Packs\ARM\CMSIS\6.3.0\CMSIS\Core\Include-D__UVISION_VERSION="543" -DSTM32F401xC -D_RTE_ -DUSE_FULL_LL_DRIVER -DHSE_VALUE="25000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="1" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1" -DSTM32F401xC-o queuecontrol\hw_init.o --omf_browse queuecontrol\hw_init.crf --depend queuecontrol\hw_init.d)
+I (../User/Inc/hw_init.h)(0x69D4AB57)
+I (../Core/Inc/main.h)(0x69D4ADD4)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h)(0x69C536D1)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f401xc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x69C536D2)
+I (C:\Users\SPS\AppData\Local\Keil_v5\ARM\ARMCC\include\stdint.h)(0x69C539DA)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x69C536D2)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x69C536D2)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h)(0x69C536D1)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h)(0x69C536D1)
+F (..\User\Inc\hw_init.h)(0x69D4AB57)()
