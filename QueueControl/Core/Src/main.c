@@ -144,7 +144,7 @@ int main(void)
   myTask02Handle = osThreadCreate(osThread(myTask02), NULL);
 
   /* definition and creation of myTask03 */
-  osThreadDef(myTask03, StartTask03, osPriorityAboveNormal, 0, 128);
+  osThreadDef(myTask03, StartTask03, osPriorityNormal, 0, 128);
   myTask03Handle = osThreadCreate(osThread(myTask03), NULL);
 
   /* definition and creation of myTask04 */
@@ -281,10 +281,12 @@ void StartTask01(void const * argument)
 {
   /* USER CODE BEGIN StartTask01 */
 	vTaskSetApplicationTaskTag(NULL,(void*)1);
+	uint32_t Item = 1;
   /* Infinite loop */
   for(;;)
   {
-    __NOP();
+		xQueueSend(myQueue01Handle, &Item, 10);
+    osDelay(1);
   }
   /* USER CODE END StartTask01 */
 }
@@ -300,10 +302,12 @@ void StartTask02(void const * argument)
 {
   /* USER CODE BEGIN StartTask02 */
 	vTaskSetApplicationTaskTag(NULL,(void*)2);
+	uint32_t Item = 2;
   /* Infinite loop */
   for(;;)
   {
-    __NOP();
+		xQueueSend(myQueue01Handle, &Item, 10);
+    osDelay(1);
   }
   /* USER CODE END StartTask02 */
 }
