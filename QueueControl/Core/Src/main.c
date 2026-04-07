@@ -148,7 +148,7 @@ int main(void)
   myTask03Handle = osThreadCreate(osThread(myTask03), NULL);
 
   /* definition and creation of myTask04 */
-  osThreadDef(myTask04, StartTask04, osPriorityAboveNormal, 0, 128);
+  osThreadDef(myTask04, StartTask04, osPriorityNormal, 0, 128);
   myTask04Handle = osThreadCreate(osThread(myTask04), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
@@ -285,8 +285,7 @@ void StartTask01(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		xQueueSend(myQueue01Handle, &Item, 10);
-    osDelay(1);
+		xQueueSend(myQueue01Handle, &Item, portMAX_DELAY);
   }
   /* USER CODE END StartTask01 */
 }
@@ -306,8 +305,7 @@ void StartTask02(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		xQueueSend(myQueue01Handle, &Item, 10);
-    osDelay(1);
+		xQueueSend(myQueue01Handle, &Item, portMAX_DELAY);
   }
   /* USER CODE END StartTask02 */
 }
@@ -327,8 +325,7 @@ void StartTask03(void const * argument)
   /* Infinite loop */
   for(;;)
   {
-		xQueueSend(myQueue01Handle, &Item, 10);
-    osDelay(1);
+		xQueueSend(myQueue01Handle, &Item, portMAX_DELAY);
   }
   /* USER CODE END StartTask03 */ 
 }
